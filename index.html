@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            height: 100vh;
+            background-image: url(blck1.jpg);
+            background-size: cover;
+            position: relative;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #about{
+            margin-top: 5vw;
+        }
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(141, 134, 134);
+        }
+
+        .header-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .header-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer p {
+            margin-bottom: 20px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block;
+        }
+
+        footer li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+
+        #contact {
+            background-color: #f5f5f5;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        #contact p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        #contact a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            transition: background-color 0.5s;
+        }
+
+        .navbar:hover {
+            background-color: rgba(0, 0, 0, 1) !important;
+        }
+        </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</body>
+
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Hi!</span>
+                <span class="down">I am Hendrick Dela Cruz</span>
+            </h1>
+            <p class="header-subtitle">Information Technology Student</p>
+        </div>
+    </header>
+
+    <section class="section pt-0" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-img-holder">
+                        <img src="Profile.jpg" class="about-img">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-caption">
+                        <h2 class="section-title mb-3">About Me</h2>
+                        <p>
+                          Hi there! I'm John Hendrick A. Dela Cruz, an Information Technology student at the University of Pangasinan. Currently
+                        pursuing my passion for technology and eager to learn and explore new things in the IT field.
+                        My academic journey includes coursework in programming, database management, networking, and various IT
+                        domains. <br>I am enthusiastic about staying updated with the latest industry trends and technologies.
+                        Outside of my academic pursuits, I enjoy working on personal projects, participating in coding challenges,
+                        and contributing to open-source initiatives. I believe in the power of technology to make a positive impact on the world, and I am excited to be part of that journey.
+                        Feel free to connect with me and explore my portfolio. Let's learn and grow together in the fascinating world of Information Technology!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="projects">
+        <h1 class="text-center mb-5 mt-5">Projects</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="memo.jpg" alt="Project 1" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Memoria</h2>
+                        <p class="card-text">Memoria
+                            This is an entertaining and useful way to test and sharpen your memory abilities.
+                            It is available to everyone who wants to practice their memory and is made for all ages.
+                            The game offers a range of game types, such as matching games, and shell games. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="logo.png" alt="Project 2" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Ilakoo</h2>
+                        <p class="card-text">Ilakoo is a shop website that provides high quality products in the Philippines. It lets users to order what they plan to buy, and if its available,
+                          they can order it and it will be delivered to their homes with care, fast and safe deliveries. Ilakoo refers to the buying and selling of goods and services over the internet.   </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <img src="ape.jpg" alt="Project 3" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Ape Athletics</h2>
+                        <p class="card-text">Extreme fitness provides user with instuctions and examples of different types of exercises,
+                          physical activities, nutritional programs and other fitness topic. 
+                          This app is designed to assist user about different types of physical activities, nutrition and diet, or other related fitness topics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, please feel free to send me an email at <a
+                href="https://www.google.com/gmail/about/">delacruzhendrick6@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hendrick Portfolio.</p>
+        <ul>
+            <li><a href="https://github.com/mrnightmonkey" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/john-hendrick-de-la-cruz-2b93b3257/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/johnhendrick.delacruz/" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
